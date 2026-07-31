@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🌸 Life RPG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<div class="app">
+
+    <h1>🌸 Life RPG 🌸</h1>
+
+    <div class="character">
+        <h2>✨ Player ✨</h2>
+        <p>Level: <span id="level">1</span></p>
+
+        <div class="xp-box">
+            <div id="xp-bar"></div>
+        </div>
+
+        <p>
+            XP: <span id="xp">0</span>/100
+        </p>
+
+        <p>
+            💰 Coins: <span id="coins">0</span>
+        </p>
+    </div>
+
+
+    <div class="quests">
+
+        <h2>📜 Daily Quests</h2>
+
+        <button onclick="completeQuest(10)">
+            💧 Drink Water +10 XP
+        </button>
+
+        <button onclick="completeQuest(20)">
+            📚 Study +20 XP
+        </button>
+
+        <button onclick="completeQuest(15)">
+            🧴 Skincare +15 XP
+        </button>
+
+        <button onclick="completeQuest(25)">
+            🏃 Exercise +25 XP
+        </button>
+
+    </div>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
