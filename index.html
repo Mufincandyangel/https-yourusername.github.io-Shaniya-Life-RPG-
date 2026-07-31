@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>🌸 Life RPG</title>
     <link rel="stylesheet" href="style.css">
@@ -9,48 +10,86 @@
 
 <div class="app">
 
-    <h1>🌸 Life RPG 🌸</h1>
+<h1>🌸 Life RPG 🌸</h1>
 
-    <div class="character">
-        <h2>✨ Player ✨</h2>
-        <p>Level: <span id="level">1</span></p>
+<div id="creator">
 
-        <div class="xp-box">
-            <div id="xp-bar"></div>
-        </div>
+<h2>✨ Create Your Character ✨</h2>
 
-        <p>
-            XP: <span id="xp">0</span>/100
-        </p>
+<input id="name" placeholder="Your name">
 
-        <p>
-            💰 Coins: <span id="coins">0</span>
-        </p>
-    </div>
+<h3>Choose your aesthetic:</h3>
+
+<button onclick="chooseStyle('gyaru')">
+🎀 Gyaru Princess
+</button>
+
+<button onclick="chooseStyle('kawaii')">
+🌸 Kawaii Sakura
+</button>
+
+<button onclick="chooseStyle('dark')">
+🖤 Dark Academia
+</button>
+
+<button onclick="chooseStyle('berry')">
+🍓 Strawberry Dream
+</button>
+
+</div>
 
 
-    <div class="quests">
+<div id="game" style="display:none;">
 
-        <h2>📜 Daily Quests</h2>
+<h2>
+✨ <span id="playerName"></span> ✨
+</h2>
 
-        <button onclick="completeQuest(10)">
-            💧 Drink Water +10 XP
-        </button>
+<p>
+Style:
+<span id="style"></span>
+</p>
 
-        <button onclick="completeQuest(20)">
-            📚 Study +20 XP
-        </button>
 
-        <button onclick="completeQuest(15)">
-            🧴 Skincare +15 XP
-        </button>
+<h3>
+Level <span id="level">1</span>
+</h3>
 
-        <button onclick="completeQuest(25)">
-            🏃 Exercise +25 XP
-        </button>
 
-    </div>
+<div class="xp-box">
+<div id="xp-bar"></div>
+</div>
 
+
+<p>
+XP:
+<span id="xp">0</span>/100
+</p>
+
+
+<p>
+💰 Coins:
+<span id="coins">0</span>
+</p>
+
+
+<h2>📜 Quests</h2>
+
+
+<button onclick="completeQuest(10)">
+💧 Drink Water +10 XP
+</button>
+
+<button onclick="completeQuest(20)">
+📚 Study +20 XP
+</button>
+
+<button onclick="completeQuest(15)">
+🧴 Skincare +15 XP
+</button>
+
+
+</div>
 
 </div>
 
@@ -58,4 +97,5 @@
 <script src="script.js"></script>
 
 </body>
+
 </html>
